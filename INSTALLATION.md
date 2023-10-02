@@ -18,7 +18,7 @@ It is highly recommended to create a dedicated Python virtual environment for ru
 Using conda:
 
 ```
-conda create --name stgraph
+conda create --name stgraph python=3.10
 conda activate stgraph
 ```
 
