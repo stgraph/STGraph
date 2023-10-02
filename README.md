@@ -6,8 +6,11 @@
 </div>
 
 <picture>
-    
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stgraph/STGraph/assets/146707796/af3fe718-f1af-4bf1-9fe6-15b79504b899">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/stgraph/STGraph/assets/146707796/4fbf5dd5-265f-4931-89a9-f7b515097989">
+  <img alt="STGraph Banner" src="https://github.com/stgraph/STGraph/assets/146707796/4fbf5dd5-265f-4931-89a9-f7b515097989">
 </picture>
+
 
 <div align="center">
   <p align="center">
