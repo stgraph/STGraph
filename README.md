@@ -6,8 +6,8 @@
 </div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stgraph/STGraph/assets/146707796/af3fe718-f1af-4bf1-9fe6-15b79504b899">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/stgraph/STGraph/assets/146707796/4fbf5dd5-265f-4931-89a9-f7b515097989">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stgraph/STGraph/assets/146707796/af1646ea-0b9e-442b-9685-aa5a3141a6ab">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/stgraph/STGraph/assets/146707796/287b7f5a-8b4d-4603-b5ae-78c8f5b65f6c">
   <img alt="STGraph Banner" src="https://github.com/stgraph/STGraph/assets/146707796/4fbf5dd5-265f-4931-89a9-f7b515097989">
 </picture>
 
