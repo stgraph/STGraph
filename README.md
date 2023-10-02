@@ -17,7 +17,7 @@
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">Installation guide</a>
+    <a href="https://github.com/stgraph/STGraph/blob/main/INSTALLATION.md">Installation guide</a>
     ·
     <a href="">Report Bug</a>
     ·
