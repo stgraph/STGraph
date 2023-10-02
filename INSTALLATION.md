@@ -1,6 +1,6 @@
 # Installation Guide
 
-This comprehensive guide will walk you through the installation process for STGraph, along with its essential prerequisites, enabling you to train GNN models on your local machine. Let's get started.
+This comprehensive guide will walk you through the installation process for STGraph, along with its essential prerequisites, enabling you to train TGNN models on your local machine. Let's get started.
 
 ## STGraph Installation
 
