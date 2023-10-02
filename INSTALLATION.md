@@ -7,7 +7,7 @@ This comprehensive guide will walk you through the installation process for STGr
 To download STGraph on your local machine, execute the following command:
 
 ```
-git clone https://github.com/bfGraph/STGraph.git
+git clone https://github.com/stgraph/STGraph.git
 cd STGraph
 ```
 
