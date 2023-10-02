@@ -117,19 +117,3 @@ Note: If either the Total Memory or Free Memory shows 0,
 ```
 
 With this, you have now completed the installation of STGraph and verified the presence of CUDA Python on your system.
-
-## Running STGraph
-
-To ensure the successful installation of STGraph, let's proceed with running STGraph by training a T-GCN model on the EnglandCOVID dataset.
-
-```
-cd ../../..
-cd benchmarking/tgcn/stgraph-dynamic/
-python3 train.py --type naive --num_epochs 10
-```
-
-Upon executing the above command, you should observe the following output:
-
-![STGraph Verification Output](assets/STGraph%20verification%20output.png)
-
-If you encounter any errors while attempting to train the T-GCN model, kindly raise an issue, and our team will promptly assist you.
