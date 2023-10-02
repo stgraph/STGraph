@@ -21,7 +21,7 @@
     ·
     <a href="https://github.com/stgraph/STGraph/issues">Report Bug</a>
     ·
-    <a href="">View Discussions</a>
+    <a href="https://github.com/stgraph/STGraph/pulls">Pull Requests</a>
   </p>
 </div>
 
