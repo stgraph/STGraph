@@ -6,19 +6,22 @@
 </div>
 
 <picture>
-    
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stgraph/STGraph/assets/146707796/af1646ea-0b9e-442b-9685-aa5a3141a6ab">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/stgraph/STGraph/assets/146707796/287b7f5a-8b4d-4603-b5ae-78c8f5b65f6c">
+  <img alt="STGraph Banner" src="https://github.com/stgraph/STGraph/assets/146707796/4fbf5dd5-265f-4931-89a9-f7b515097989">
 </picture>
+
 
 <div align="center">
   <p align="center">
     <a href=""><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">Installation guide</a>
+    <a href="https://github.com/stgraph/STGraph/blob/main/INSTALLATION.md">Installation guide</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="https://github.com/stgraph/STGraph/issues">Report Bug</a>
     ·
-    <a href="">View Discussions</a>
+    <a href="https://github.com/stgraph/STGraph/pulls">Pull Requests</a>
   </p>
 </div>
 
@@ -35,113 +38,8 @@ The _Seastar_ system outperforms state-of-the-art GNN frameworks but lacks suppo
 
 ## Getting Started
 
-### Pre-requisites
+Install, build and train your first TGNN model using STGraph by following the [installation guide](https://github.com/stgraph/STGraph/blob/main/INSTALLATION.md).
 
-Install the python packages by running the following. It is recommended that you create a virtual environment before installing the packages.
-
-**Setup a new virtual environment**
-```
-conda create --name stgraph
-conda activate stgraph
-```
-
-**Install the python packages**
-```
-pip install -r requirements.txt
-```
-
-STGraph requires CUDA Version `11.7` or above to run. Versions below that may or may not run, depending on any changes within CUDA.
-
-### Installation
-
-You can git clone STGraph into your workspace by running the following command
-
-```
-git clone https://github.com/stgraph/STGraph.git
-cd STGraph
-```
-
-## Running your first STGraph Program
-
-In this is quick mini tutorial, we will show you how to train a simple GCN model on the Cora dataset. After installing STGraph and entering the STGraph directory, enter the following commands to reach the GCN `benchmarking` folder
-
-```
-cd benchmarking/gcn/stgraph
-```
-
-Run the `train.py`, with 100 epochs and specify the dataset name. For this example, we shall use Cora
-
-```
-python3 train.py --num_epochs 100 --dataset cora
-```
-
-You should get an output like this. The initial prints are truncated.
-
-```
-.
-.
-.
-Epoch 00090 | Time(s) 0.0048 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00091 | Time(s) 0.0024 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00092 | Time(s) 0.0029 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00093 | Time(s) 0.0029 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00094 | Time(s) 0.0027 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00095 | Time(s) 0.0030 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00096 | Time(s) 0.0024 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00097 | Time(s) 0.0022 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00098 | Time(s) 0.0022 | train_acc 0.303791 | Used_Memory 32.975098 mb
-Epoch 00099 | Time(s) 0.0036 | train_acc 0.303791 | Used_Memory 32.975098 mb
-
-^^^0.032202^^^0.003098
-```
-
-If you don't get this output and have followed every single step in the setting up and installation section, please raise an issue we will look into it.
-
-## How to build STGraph
-
-This is for users who want to make changes to the STGraph codebase and get it build each time. Follow the steps mentioned to properly build STGraph.
-
-### Compiling the CUDA code
-
-The following steps need to be done if you made any changes to any CUDA files within the `stgraph/graph` directory for each graph representation.
-
-STGraph supports training dynamic and static graphs. To handle all the graph representations logic, it is written as a PyBind11 module over a CUDA file. As of now the following CUDA code for different graph representations exists
-
-1. `csr.cu`
-2. `pcsr.cu`
-3. `gpma.cu`
-
-To compile the `[name].cu` file, run the following command
-
-```
-/usr/local/cuda-11.7/bin/nvcc $(python3 -m pybind11 --includes) -shared -rdc=true --compiler-options '-fPIC' -D__CDPRT_SUPPRESS_SYNC_DEPRECATION_WARNING -o [name].so [name].cu
-```
-This would generate the [name].so shared object file, that is used in the STGraph module. 
-
-### Building STGraph
-
-Make sure to go back to the root directory and run the following to build and install STGraph
-
-```
- python3 -m build && pip uninstall stgraph -y && pip install dist/stgraph-1.0.0-py3-none-any.whl
-```
-
-## Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests, issues, etc to us.
-
-## How to contribute to Documentation
-
-We follow the PEP-8 format. [Black](https://pypi.org/project/black/) is used as the formatter and [pycodestyle](https://pypi.org/project/pycodestyle/) as the linter. The linter is is configure to work properly with black (set line length to 88)
-
-Tutorial for Python Docstrings can be found [here](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html)
-
-```
-sphinx-apidoc -o docs/developers_guide/developer_manual/package_reference/ python/stgraph/ -f
-cd docs/
-make clean
-make html
-```
 ## Attributions
 
 | Author(s)                                                                                                                                                                         | Title                                                                                                    | Link(s)                                                                                                                          |
