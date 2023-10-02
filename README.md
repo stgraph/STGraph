@@ -19,7 +19,7 @@
     <br />
     <a href="https://github.com/stgraph/STGraph/blob/main/INSTALLATION.md">Installation guide</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="https://github.com/stgraph/STGraph/issues">Report Bug</a>
     ·
     <a href="">View Discussions</a>
   </p>
