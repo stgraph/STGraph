@@ -6,6 +6,10 @@
 STGraph's Documentation and Tutorials!
 ======================================
 
+.. warning::
+
+   The documentation for STGraph is still in progress. 
+
 .. note::
 
    Write a compelling and flattering introduction about STGraph
