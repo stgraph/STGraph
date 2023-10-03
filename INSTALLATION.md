@@ -120,16 +120,23 @@ With this, you have now completed the installation of STGraph and verified the p
 
 ## Running STGraph
 
-To ensure the successful installation of STGraph, let's proceed with running STGraph by training a T-GCN model on the EnglandCOVID dataset.
+To verify the successful installation, let's proceed with running STGraph by training a T-GCN model on the WikiMaths dataset.
 
 ```
 cd ../../..
-cd benchmarking/tgcn/stgraph-dynamic/
-python3 train.py --type naive --num_epochs 10
+cd benchmarking/
+chmod u+x verify.sh
+./verify.sh
 ```
 
-Upon executing the above command, you should observe the following output:
+Upon executing the above command, it will download the dataset and start training the model. You'll get a table displaying the time taken, MSE and memory consumed for each epoch. Congratulations, STGraph is running properly. 
 
-![STGraph Verification Output](assets/STGraph%20verification%20output.png)
+You might either find that the results shows up as OOM (out of memory). This may happen due to the fact that the GPU does not have enough memory to work with this dataset. You can still confirm whether STGraph works properly by inspecting the CUDA code generated for this T-GCN model. You can view it in the following directory
+
+```
+cd static-temporal-tgcn/stgraph/
+```
+
+You should find the CUDA code in `egl_kernel.cu` and the PTX file in `egl_kernel.ptx`.
 
 If you encounter any errors while attempting to train the T-GCN model, kindly raise an issue, and our team will promptly assist you.
