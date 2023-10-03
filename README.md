@@ -5,6 +5,8 @@
     <p><em>This is an anonymized fork of the original repository for purposes of submission to double blind conferences.</em></p>
 </div>
 
+[![Documentation Status](https://readthedocs.org/projects/stgraph-tgl-stgraph/badge/?version=latest)](https://stgraph-tgl-stgraph.readthedocs.io/en/latest/?badge=latest)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/stgraph/STGraph/assets/146707796/af1646ea-0b9e-442b-9685-aa5a3141a6ab">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/stgraph/STGraph/assets/146707796/287b7f5a-8b4d-4603-b5ae-78c8f5b65f6c">
@@ -14,7 +16,7 @@
 
 <div align="center">
   <p align="center">
-    <a href=""><strong>Explore the docs »</strong></a>
+    <a href="https://stgraph-tgl-stgraph.readthedocs.io/en/latest/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/stgraph/STGraph/blob/main/INSTALLATION.md">Installation guide</a>
