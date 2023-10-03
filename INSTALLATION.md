@@ -1,6 +1,6 @@
 # Installation Guide
 
-This comprehensive guide will walk you through the installation process for STGraph, along with its essential prerequisites, enabling you to train GNN models on your local machine. Let's get started.
+This comprehensive guide will walk you through the installation process for STGraph, along with its essential prerequisites, enabling you to train TGNN models on your local machine. Let's get started.
 
 ## STGraph Installation
 
@@ -18,7 +18,7 @@ It is highly recommended to create a dedicated Python virtual environment for ru
 Using conda:
 
 ```
-conda create --name stgraph
+conda create --name stgraph python=3.10
 conda activate stgraph
 ```
 
